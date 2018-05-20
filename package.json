@@ -4,12 +4,14 @@
   "description": "general purpose api",
   "main": "index.js",
   "scripts": {
-    "start": "node ./backend/server.js"
+    "start": "NODE_ENV=production node ./backend/server.js",
+    "dev": "NODE_ENV=development node ./backend/server.js"
   },
   "author": "jamesjsewell",
   "license": "ISC",
   "devDependencies": {
     "body-parser": "^1.18.2",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "mongoose": "^5.0.12",
     "nodemon": "^1.17.2",

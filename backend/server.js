@@ -1,6 +1,11 @@
 const express = require("express"),
 	bodyParser = require("body-parser")
 
+
+if(process.env.NODE_ENV == 'development'){
+	require('dotenv').config();
+}
+
 // connect to the database
 const connectToDB = require("./db_config.js").connectToDB
 connectToDB("test_project")
