@@ -1,0 +1,19 @@
+{
+  "name": "general_purpose_api",
+  "version": "1.0.0",
+  "description": "general purpose api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./backend/server.js"
+  },
+  "author": "jamesjsewell",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.12",
+    "nodemon": "^1.17.2",
+    "npm": "^5.7.1",
+    "npm-run-all": "^4.1.2"
+  }
+}
