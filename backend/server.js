@@ -1,5 +1,6 @@
 const express = require("express"),
-	bodyParser = require("body-parser")
+	bodyParser = require("body-parser"),
+	uppy = require('uppy-server')
 
 
 if(process.env.NODE_ENV == 'development'){
@@ -41,4 +42,10 @@ app.listen(PORT, function () {
 		"\n\n===== listening for requests on port " + PORT + " =====\n\n"
 	)
 })
+
+// To enable Uppy Socket for realtime upload progress, you can call the socket method like so:
+// var server = app.listen(PORT)
+
+// uppy.socket(server, options)
+
 
